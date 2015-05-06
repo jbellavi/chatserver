@@ -1,0 +1,235 @@
+body {
+  color: #222;
+  background-color: white;
+  font: 12pt 'Merienda One';
+  line-height: 120%;
+  text-align: center;
+}
+
+/* should divide css and js into a bunch of files */
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1 {
+	color: #222;
+	text-align: center;
+	font: 200 120px 'Merienda One';
+  margin: 10px;
+  padding: 10px;
+}
+
+h2 {
+  color: #222;
+  text-align: center;
+  font: 100 30px 'Merienda One';
+}
+
+input:focus {
+	outline: none;
+}
+
+button.menubutton {
+    width: 14em;
+    height: 3em;
+    margin: .5em;
+    border: 1px solid #444;
+    font: 24pt 'Merienda One';
+    color: #e8e8e8;
+    background-color: #222;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    resize: none;
+    overflow: hidden;
+}
+
+#sidebar {
+    background:#222;
+    float: right;
+    width: 300px;
+    height: 100%;
+    position: relative;
+    border:2px solid #000000;
+    border-left: none;
+    overflow: none;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background: url(../images/castle.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#contentDiv {
+    background:#e8e8e8;
+    width: 0px;
+    height: 100%;
+    position: relative;
+    border:2px solid #000000;
+
+    background: url(../images/wood.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#turnDiv {
+	position: absolute;
+	line-height: 100%;
+	left: 12%;
+	bottom: 45%;
+	font-size: 72pt;
+	color: white;
+	width: 50%;
+	height: 10%;
+	align: center;
+	z-index: 1;
+	display: none;
+}
+
+#mainCanvas {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#tileCanvas {
+    width: 80%;
+    height: auto;
+    margin: 10%;
+    border: .2em solid #000000;
+
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#tileTitle {
+  font: 20pt 'Merienda One';
+  color: #222;
+  margin: 0px;
+  padding: 0px;
+  background-color: #e8e8e8;
+}
+
+button.placeButton {
+  width: 4em;  
+  height: 2em;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 0em;
+  margin-bottom: .75em;
+  border:1px solid #222;
+  font: 12pt 'Merienda One';
+  background-color: #e8e8e8
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border:1px solid #888;
+}
+
+#mainPlace {
+  width: 8em;
+}
+
+#mainMeeple, #mainSkip {
+  width: 8em;
+  display: none;
+}
+
+button.placeButton:focus {
+  outline: none;
+}
+
+textarea.playerBox, textarea.lobbyBox, #turnCount {
+  padding: 2px;
+  resize: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  border:1px solid #444;
+  background-color: #e8e8e8;
+  font: 12pt 'Merienda One';
+  overflow: hidden;
+}
+
+textarea.lobbyBox {
+  width: 40%;
+  color: #222;
+}
+
+#turnCount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #222;
+}
+
+#mainDiv { 
+  height: 50em; 
+  width: 100%;
+  overflow: hidden;
+}
+
+input.hostField {
+  padding: .5em;
+  margin: 1em;
+  width: 30%;
+  color: #222;
+  background-color: #e8e8e8;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  resize: none;
+  overflow: hidden;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #222;
+  font: 12pt 'Merienda One';
+}
+
+button.submitButton, button.backButton {
+  width: 30%;  
+  height: 3em;
+  margin: .5em;
+  border: 1px solid #444;
+  font: 18pt 'Merienda One';
+  color: #e8e8e8;
+  background-color: #222;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  resize: none;
+  overflow: hidden;
+}
+
+#mainDiv, #hostDiv, #joinDiv, #settingsDiv, #instructionsDiv, #tileDiv, #lobbyDiv {
+  display: none;
+}
+
+#instructionsDiv {
+  margin-right:  10%;
+  margin-left:  10%;
+  text-align: justify;
+}
+
+p.imageBlock {
+  text-align: center;
+}

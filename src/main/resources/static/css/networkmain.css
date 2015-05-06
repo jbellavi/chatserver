@@ -1,0 +1,43 @@
+body {
+  padding-top: 0px;
+  background-image: url("background.jpg");
+  background-repeat: repeat-x;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+#chat-container {
+  width: 100%;
+  border: none;
+  background: rgba(0,0,0,.7);
+  overflow: auto;
+}
+
+#chat {
+  text-align: left;
+  color: #bbbbbb;
+  padding: 25px;
+}
+
+#head {
+  height: 120px;
+}
+
+#head, #tail {
+  background: rgba(0,0,0,.5);
+}
+
+#tail {
+  padding: 20px;
+  text-align: left;
+  height: 100px;
+}
+
+img {
+  margin: 5px;
+}
+
+.message {
+  padding: 8px;
+  margin: 1px;
+}
